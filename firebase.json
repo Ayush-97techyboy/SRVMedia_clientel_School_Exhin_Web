@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "*.webm",
+      "*.zip",
+      "*.pdf",
+      "*.py",
+      "video_frames/**",
+      "anima_inspections/**"
+    ]
+  }
+}

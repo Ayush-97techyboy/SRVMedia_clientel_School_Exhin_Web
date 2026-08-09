@@ -1,0 +1,127 @@
+.marquee-section {
+  background-color: #FFFFFF;
+  padding-top: 24px;
+  padding-bottom: 40px;
+  border-bottom: none;
+  overflow: hidden;
+}
+
+.marquee-section__header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.marquee-section__title {
+  font-family: 'FONTSPRING DEMO - Museo Sans', 'Museo Sans', 'Museo', sans-serif;
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: #190938;
+  margin-bottom: 0;
+}
+
+.marquee-section__subtitle {
+  font-size: var(--font-size-base);
+  color: var(--color-text-muted);
+}
+
+.marquee {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  position: relative;
+  mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+}
+
+.marquee__row {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  width: 100%;
+}
+
+.marquee__group {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  min-width: 100%;
+  will-change: transform;
+}
+
+.marquee__row--ltr .marquee__group {
+  animation: marquee-ltr 28s linear infinite;
+}
+
+.marquee__row--rtl .marquee__group {
+  animation: marquee-rtl 28s linear infinite;
+}
+
+.marquee__row:hover .marquee__group,
+.marquee__row:focus-within .marquee__group {
+  animation-play-state: paused;
+}
+
+.marquee__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  transition: transform var(--transition-fast);
+  white-space: nowrap;
+}
+
+.marquee__item:hover,
+.marquee__item:focus-within {
+  transform: translateY(-2px);
+}
+
+.marquee__item-img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.marquee__item-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+  font-size: 0.875rem;
+}
+
+.marquee__item-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-main);
+}
+
+@keyframes marquee-ltr {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes marquee-rtl {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

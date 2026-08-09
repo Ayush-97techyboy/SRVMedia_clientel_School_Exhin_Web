@@ -1,0 +1,45 @@
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .marquee__group {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .hero__slide,
+  .hero__vertical-pane,
+  .exhibition-track {
+    transition: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .btn,
+  .hero__ctrl-btn,
+  .school-card,
+  .exhibition-card {
+    border: 2px solid CanvasText;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+    --font-size-4xl: 1.75rem;
+    --font-size-3xl: 1.5rem;
+    --spacing-16: 2.5rem;
+    --spacing-12: 2rem;
+  }
+
+  .container {
+    padding-left: var(--spacing-4);
+    padding-right: var(--spacing-4);
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "srv-media-premier-schools-exhibition",
+  "version": "1.0.0",
+  "description": "Premier Schools Exhibition (PSE) Landing Page for SRV Media / Crio.do Frontend Assignment",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y http-server . -p 3000",
+    "validate:html": "npx -y html-validate index.html"
+  },
+  "keywords": [
+    "crio",
+    "srv-media",
+    "landing-page",
+    "html5",
+    "css-bem",
+    "accessibility",
+    "vanilla-js"
+  ],
+  "author": "Ayush Mishra",
+  "license": "ISC"
+}

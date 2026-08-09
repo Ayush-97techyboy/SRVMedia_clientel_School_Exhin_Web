@@ -1,0 +1,263 @@
+.banner-gap-section {
+  padding: 48px 0;
+  background-color: var(--color-bg-alt);
+}
+
+.banner-gap-card {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 300ms ease;
+}
+
+.banner-gap-card:hover {
+  transform: translateY(-4px);
+}
+
+.banner-gap-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.preschedule-section {
+  padding: 64px 0;
+  background-color: #FFFFFF;
+}
+
+.preschedule-card {
+  width: 100%;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(38, 7, 82, 0.12);
+  transition: transform 300ms ease;
+}
+
+.preschedule-card:hover {
+  transform: translateY(-4px);
+}
+
+.preschedule-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.attractions-section {
+  padding: 80px 0;
+  background-color: #F8F6FC;
+}
+
+.attractions-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 24px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.attraction-card {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 28px rgba(38, 7, 82, 0.1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #FFFFFF;
+}
+
+.attraction-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 36px rgba(38, 7, 82, 0.18);
+}
+
+.attraction-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.must-visit-section {
+  width: 100%;
+  position: relative;
+  background-color: transparent;
+  background-image: url('../../Assets/7 Must-Visit/BG-Desktop.png');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+  padding: 48px 0 80px 0;
+  margin-bottom: 60px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .must-visit-section {
+    background-image: url('../../Assets/7 Must-Visit/bg-mobile.png');
+    background-size: 100% 100%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    padding: 36px 0 90px 0;
+    margin-bottom: 30px;
+  }
+}
+
+.must-visit-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.must-visit-title {
+  font-family: 'FONTSPRING DEMO - Museo Sans', 'Museo Sans', 'Museo', sans-serif;
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.must-visit-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.must-visit-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: transform 200ms ease;
+}
+
+.must-visit-btn:hover,
+.must-visit-btn:focus-visible {
+  transform: scale(1.1);
+}
+
+.must-visit-btn-img {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+.must-visit-slider {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: max(24px, calc((100vw - 1200px) / 2 + 16px));
+  padding-right: max(24px, calc((100vw - 1200px) / 2 + 16px));
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 768px) {
+  .must-visit-slider {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 16px;
+  }
+}
+
+.must-visit-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.must-visit-card {
+  flex: 0 0 auto;
+  width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 300ms ease;
+}
+
+.must-visit-card:hover {
+  transform: translateY(-6px);
+}
+
+.must-visit-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery-section {
+  padding: 80px 0;
+  background-color: #FFFFFF;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+
+.gallery-card {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(38, 7, 82, 0.08);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(38, 7, 82, 0.16);
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.gallery-panorama {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(38, 7, 82, 0.12);
+  margin-top: 24px;
+}
+
+.gallery-panorama-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .attractions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .must-visit-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .must-visit-card {
+    width: 260px;
+  }
+}
